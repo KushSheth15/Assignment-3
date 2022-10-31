@@ -1,0 +1,16 @@
+<h1>==>User-Form</h1><br />
+
+Enter Firstname :- <input type="text" [(ngModel)]="a" /><br /><br />
+Enter Lastname :- <input type="text" [(ngModel)]="b" /><br /><br />
+Enter Email :- <input type="text" [(ngModel)]="c" /><br /><br />
+Enter City :- <input type="text" [(ngModel)]="d" /><br /><br />
+<button (click)="displayData(a, b, c, d)">Submit</button>
+
+
+<div *ngIf="toggle">
+    <h2>==> User-Data :- </h2>
+    <h3>Firstname --> {{ fname }}</h3>
+    <h3>Lastname --> {{ lname }}</h3>
+    <h3>Email --> {{ email }}</h3>
+    <h3>City --> {{ city }}</h3>
+</div>
